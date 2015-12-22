@@ -1,0 +1,17 @@
+/* =========================================================================
+   Button
+   ========================================================================= */
+
+/* Styles for a button */
+.submit {
+  background-color: $jp-seafoam;
+  border: 2px groove $gray-d4;
+  border-radius: 1em;
+  box-shadow: rgba($black, .75) 0 2px 6px;
+  color: $white;
+  font-family: $open-sans-condensed;
+  font-size: 1.25rem;
+  line-height: 1;
+  margin-top: .5em;
+  padding: 5px 25px;
+}

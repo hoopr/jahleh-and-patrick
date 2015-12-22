@@ -1,0 +1,23 @@
+/* =========================================================================
+   Color
+   ========================================================================= */
+
+/* Color | Elements
+ =========================================================================== */
+
+/* Styles for links */
+a {
+
+  /* Set default color and text decoration for links */
+  &,
+  &:hover,
+  &:visited {
+    color: $jp-navy;
+    text-decoration: none;
+  }
+
+  /* Underline a link on hover */
+  &:hover {
+    text-decoration: underline;
+  }
+}

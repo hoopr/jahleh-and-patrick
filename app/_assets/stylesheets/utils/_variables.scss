@@ -1,0 +1,41 @@
+/* =========================================================================
+   Variables
+   ========================================================================= */
+
+/* Variables | Media Queries
+   ========================================================================= */
+
+/* Device sizes */
+$small-max-width: 47.9375rem; // 767px
+$medium-min-width: 48rem; // 768px
+$medium-max-width: 64rem; // 1024px
+$large-min-width: 64.0625rem; // 1025px
+$large-max-width: 75rem; // 1200px
+$big-min-width: 75.0625rem; // 1201px
+
+/* Breakpoint variables */
+$mq-small: max-width $small-max-width; // @media (max-width: 47.9375rem)
+$mq-medium: min-width $medium-min-width; // @media (min-width: 48rem)
+$mq-large: min-width $large-min-width; // @media (min-width: 64.0625rem)
+$mq-big: min-width $big-min-width; // @media (min-width: 75.0625rem)
+
+/* Variables | Typography
+   ========================================================================= */
+$open-sans-condensed: 'Open Sans Condensed', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+$shadows-into-light: 'Shadows Into Light', cursive;
+
+/* Variables | Colors
+   ========================================================================= */
+
+/* Base colors */
+$black: #000;
+$gray-b: #bbb;
+$gray-d3: #d3d3d3;
+$gray-d4: #d4d4d4;
+$gray-ec: #ececec;
+$red: #f00;
+$white: #fff;
+
+/* Brand colors */
+$jp-navy: #00003d;
+$jp-seafoam: #2ebe76;

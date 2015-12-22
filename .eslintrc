@@ -1,0 +1,30 @@
+{
+  // Use the Airbnb ESLint base config (without React) as a starting point
+  "extends": "airbnb/base",
+
+  // Parse code with Babel
+  "parser": "babel-eslint",
+
+  // Specify the environments code will run in
+  "env": {
+    "es6": true,
+    "jquery": true
+  },
+
+  // Global variables for this project that ESLint should recognize
+  "globals": {
+  },
+
+  // Specific ESLint rules to override locally
+  "rules": {
+
+    // Enforce no trailing commas
+    "comma-dangle": [2, "never"],
+
+    // Don't enforce padding within blocks (this is just stylistic preference)
+    "padded-blocks": [0, "never"],
+
+    // Allow spaces inside brackets (this is just stylistic preference)
+    "object-curly-spacing": [0, "always"]
+  }
+}

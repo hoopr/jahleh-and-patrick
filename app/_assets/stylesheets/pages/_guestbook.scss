@@ -1,0 +1,25 @@
+/* =========================================================================
+   Guestbook
+   ========================================================================= */
+
+/* Styles for the Guestbook page */
+#guestbookContainer {
+  text-align: center;
+}
+
+/* Change alignment and spacing around form errors */
+#guestbookErrorname,
+#guestbookErrornote {
+  padding-top: 10px;
+  text-align: left;
+}
+
+/* Align guestbook entry text to the left */
+.guestbookEntry {
+  text-align: left;
+}
+
+/* Make a guestbook entry name bold */
+.guestbookEntryName {
+  font-weight: bold;
+}

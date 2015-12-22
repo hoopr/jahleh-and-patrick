@@ -1,0 +1,35 @@
+/* =========================================================================
+   Placeholders
+   ========================================================================= */
+
+/* Placeholders | Forms
+   ========================================================================= */
+
+/* Base styles for a form field */
+%form-field-base {
+  border: 1px solid $gray-d4;
+  font-family: $open-sans-condensed;
+  font-size: 1.2rem;
+
+  /* Increase form field font size on medium and up devices */
+  @include breakpoint($mq-medium) {
+    font-size: 1.25rem;
+  }
+}
+
+/* Base styles for a form input field */
+%form-input-base {
+
+  /* Base form field styling */
+  @extend %form-field-base;
+
+  /* Base styles specific to a form input */
+  box-shadow: inset 0 2px 2px $gray-ec;
+  padding: 5px;
+
+  /* Base styles for when an input is in focus */
+  &:focus {
+    border: 1px solid $gray-b;
+    outline: 0;
+  }
+}

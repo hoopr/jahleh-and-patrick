@@ -1,0 +1,30 @@
+/* =========================================================================
+   Wedding
+   ========================================================================= */
+
+/* Styles for the Wedding page */
+#weddingContainer {
+  text-align: center;
+
+  /* Make links the seafoam green brand color */
+  a,
+  a:hover,
+  a:visited {
+    color: $jp-seafoam;
+  }
+}
+
+/* Make Google Map iframe 100% wide */
+#wedding_where iframe {
+  width: 100%;
+
+  /* Give iframe fixed with on medium and up devices */
+  @include breakpoint($mq-medium) {
+    width: 592px;
+  }
+}
+
+/* Put some space below the beachhouse slideshow */
+#slider_beachhouse {
+  margin-bottom: 3em;
+}

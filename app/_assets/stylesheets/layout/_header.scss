@@ -1,0 +1,32 @@
+/* =========================================================================
+   Header
+   ========================================================================= */
+
+/* Styles for the catch phrase "Jahleh + Patrick = 11.1.2014" */
+#catch_phrase {
+  color: $white;
+  font-size: .95rem;
+  left: 2px;
+  opacity: .5;
+  position: absolute;
+  top: 7px;
+
+  /* On medium and up devices, increase font size and move in */
+  @include breakpoint($mq-medium) {
+    font-size: 1.75rem;
+    left: 10px;
+    top: 15px;
+  }
+
+  /* On large and up devices, increase font size and move down */
+  @include breakpoint($mq-large) {
+    font-size: 2rem;
+    top: 20px;
+  }
+}
+
+/* Styles for the hero picture */
+#picture {
+  height: auto;
+  width: 100%;
+}

@@ -1,0 +1,72 @@
+/* =========================================================================
+   Our Story
+   ========================================================================= */
+
+/* Center align text on the Our Story page */
+#ourStoryContainer {
+  text-align: center;
+}
+
+/* Display a description heading and paragraph inline block */
+.ourStory_description {
+  h4,
+  p {
+    display: inline-block;
+  }
+}
+
+/* Styles for the "jahleh + patrick" section */
+#ourStory_jahlpat {
+
+  /* Give description left and right borders a height of 50px */
+  .ourStory_description {
+    .left,
+    .right {
+      height: 50px;
+    }
+  }
+
+  /* Give image left and right borders a height of 100px and a black border */
+  .ourStory_image {
+    .left,
+    .right {
+      border-bottom: 2px dashed $black;
+      height: 100px;
+    }
+  }
+
+  /* Give flexslider a width and center with auto left/right margins */
+  .flexslider {
+    margin-left: auto;
+    margin-right: auto;
+    width: 308px ;
+
+    /* Remove left/right margins and make 30% wide on large and up devices */
+    @include breakpoint($mq-large) {
+      margin-left: 0;
+      margin-right: 0;
+      width: 30%;
+    }
+  }
+}
+
+/* Make Our Story section images 100px wide */
+#ourStory_jahleh img,
+#ourStory_patrick img,
+#ourStory_athletics img,
+#ourStory_summer2012 img,
+#ourStory_fall2012 img,
+#ourStory_christmas2012 img,
+#ourStory_spring2013 img,
+#ourStory_summer2013 img,
+#ourStory_fall2013 img,
+#ourStory_graduation img,
+#ourStory_christmas2013 img,
+#ourStory_westpalmbeach img {
+  width: 100px;
+
+  /* Set auto width for images on medium and up devices */
+  @include breakpoint($mq-medium) {
+    width: auto;
+  }
+}

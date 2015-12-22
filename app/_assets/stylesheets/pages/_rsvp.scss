@@ -1,0 +1,26 @@
+/* =========================================================================
+   RSVP
+   ========================================================================= */
+
+/* Styles for the RSVP page */
+#rsvpContainer {
+  text-align: center;
+
+  /* Make links the seafoam green brand color */
+  a,
+  a:hover,
+  a:visited {
+    color: $jp-seafoam;
+  }
+}
+
+/* Give left padding to form labels */
+#rsvpCodeForm label {
+  padding-left: 5px;
+}
+
+/* Change alignment and spacing around form errors */
+#rsvpCodeErrors {
+  padding-top: 10px;
+  text-align: left;
+}

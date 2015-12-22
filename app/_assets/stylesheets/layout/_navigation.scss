@@ -1,0 +1,61 @@
+/* =========================================================================
+   Navigation
+   ========================================================================= */
+
+/* Styles for navigation container */
+#navcontainer {
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+
+  /* Remove padding on medium and up devices */
+  @include breakpoint($mq-medium) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* Styles for the navigation list */
+#navlist {
+  margin-top: 0;
+  padding: 0;
+
+  /* Increase top margin on medium and up devices */
+  @include breakpoint($mq-medium) {
+    margin-top: 0.5em;
+  }
+
+  /* Increase top margin on large and up devices */
+  @include breakpoint($mq-large) {
+    margin-top: 1em;
+  }
+}
+
+/* Styles for a navigation item */
+.navitem {
+  border: 1px solid $gray-d3;
+  display: inline-block;
+  font-size: 1.5rem;
+  width: 100%;
+
+  /* Alter width on medium and up devices */
+  @include breakpoint($mq-medium) {
+    width: 5em;
+  }
+}
+
+/* Styles for a navigation link */
+.navlink {
+  font-family: $shadows-into-light;
+  text-align: center;
+}
+
+/* Make active navigation item background color the brand navy */
+#navlist .active {
+  background-color: $jp-navy;
+
+  /* Make the link inside the active navigation item white */
+  .navlink {
+    color: $white;
+  }
+}

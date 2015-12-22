@@ -1,0 +1,13 @@
+/* =========================================================================
+   Registry
+   ========================================================================= */
+
+/* Styles for the Registry page */
+#registryContainer {
+  text-align: center;
+
+  /* Give a seafoam green border to registry images */
+  img {
+    border: 1px solid $jp-seafoam;
+  }
+}

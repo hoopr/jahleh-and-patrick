@@ -1,0 +1,58 @@
+/* =========================================================================
+   Form
+   ========================================================================= */
+
+/* Styles for a form label */
+label {
+
+  /* Base form field styling */
+  @extend %form-field-base;
+
+  /* Specific form label styles */
+  background-color: $jp-seafoam;
+  border-bottom-left-radius: 5px;
+  border-right: 0;
+  border-top-left-radius: 5px;
+  color: $white;
+  font-weight: bold;
+  line-height: 1.5;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  text-align: center;
+
+  /* Styles for an error label */
+  &.error {
+    background-color: $white;
+    border: 0;
+    color: $red;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Styles for a form input */
+input {
+
+  /* Base form input styling */
+  @extend %form-input-base;
+
+  /* Specific form input styles */
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 4px;
+  line-height: 1.5;
+}
+
+/* Styles for a form textarea */
+textarea {
+
+  /* Base form input styling */
+  @extend %form-input-base;
+
+  /* Specific form textarea styling */
+  border-radius: 5px;
+  margin-top: .5em;
+  padding-top: 10px;
+}
