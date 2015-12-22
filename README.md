@@ -7,14 +7,13 @@ The wedding website for Jahleh & Patrick Hooper.
 3. Run `bundle install --path vendor/bundle` (you'll need Ruby & Bundler).
 4. Run `npm install` (you'll need Node.js & npm).
 5. Let npm scripts handle your workflow!
-  * Use `npm run clean` to clean the "public/assets" (build) folder.
-  * Use `npm start` to build development code and start a server.
+  * Use `npm start` to build development code and start a Browersync server.
   * Use `npm run lint:stylesheets` to run SCSS-Lint on the Sass source code.
   * Use `npm run lint:javascripts` to run ESLint on the JavaScript source code.
   * Use `npm run lint` to run lint both Sass and JavaScript source code in one task.
   * Use `npm test` to check for lint and development build errors.
-  * Use `npm run build` to clean and rebuild the "public/assets" folder for production.
-
+  * Use `npm run build` to compile production code.
+  * Use `npm run deploy` to test code, compile it for production, and upload the *public* folder to Surge.
 
 ## Sass Libraries
 - Breakpoint ([http://breakpoint-sass.com/](http://breakpoint-sass.com/))
