@@ -15,10 +15,22 @@ The wedding website for Jahleh & Patrick Hooper.
   * Use `npm run build` to compile production code.
   * Use `npm run deploy` to test code, compile it for production, and upload the *public* folder to Surge.
 
-## Sass Libraries
+## Libraries
+
+#### CSS + Sass
 - Breakpoint ([http://breakpoint-sass.com/](http://breakpoint-sass.com/))
+- FlexSlider ([http://flexslider.woothemes.com/](http://flexslider.woothemes.com/))
+- Normalize ([https://necolas.github.io/normalize.css/](https://necolas.github.io/normalize.css/))
 - Sassy Maps ([https://github.com/at-import/Sassy-Maps](https://github.com/at-import/Sassy-Maps))
 - Unsemantic Grid System ([http://unsemantic.com/](http://unsemantic.com/))
 
-## JavaScript Libraries
+#### Fonts
+- FlexSlider ([http://flexslider.woothemes.com/](http://flexslider.woothemes.com/))
+- Open Sans Condensed ([https://www.google.com/fonts/specimen/Open+Sans+Condensed](https://www.google.com/fonts/specimen/Open+Sans+Condensed))
+- Shadows Into Light Two ([https://www.google.com/fonts/specimen/Shadows+Into+Light+Two](https://www.google.com/fonts/specimen/Shadows+Into+Light+Two))
+
+#### JavaScript
+- FlexSlider ([http://flexslider.woothemes.com/](http://flexslider.woothemes.com/))
+- jQuery ([https://jquery.com](https://jquery.com))
+- jQuery Validation Plugin ([http://jqueryvalidation.org/](http://jqueryvalidation.org/))
 - Modernizr ([http://modernizr.com/](http://modernizr.com/))
