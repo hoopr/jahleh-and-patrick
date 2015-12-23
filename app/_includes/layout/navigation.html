@@ -1,0 +1,14 @@
+{% assign page_title_lower = page.title | downcase %}
+
+<nav class="main-nav">
+  <ul class="menu horizontal-menu">
+    {% for main_nav_item in site.data.layout.navigation %}
+      {% assign main_nav_item_title = main_nav_item.title %}
+      {% assign main_nav_item_title_lower = main_nav_item_title | downcase %}
+
+      <li {% if page_title_lower == main_nav_item_title_lower %}class="active"{% endif %}>
+        <a href="/{{ main_nav_item.url }}">{{ main_nav_item_title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

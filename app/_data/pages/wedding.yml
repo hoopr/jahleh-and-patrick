@@ -1,0 +1,47 @@
+- title: 'when'
+  paragraphs:
+    - '11:00 am'
+    - 'saturday, november 1, 2014'
+
+- title: 'where'
+  paragraphs:
+    - 'the blue horizon, anna maria island'
+    - '99 26th street north'
+    - 'bradenton beach, FL 34217'
+
+- iframe:
+    src: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3539.5466908199755!2d-82.70513964999999!3d27.4833686!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c311bb0bb7fbcf%3A0xa98bca55d5160df8!2s99+26th+St+N!5e0!3m2!1sen!2sus!4v1393283969855'
+    attributes: 'width="592" height="320" frameborder="0" style="border:0"'
+
+- title: 'the beach house'
+  paragraphs:
+    - 'we have this beach house for the weekend so everyone can stay together, you just have to get to FL!'
+    - 'the beach is in the backyard, as well as a pool, sand volleyball, shuffleboard and an outdoor bar.'
+    - "we will only need a few hours of everyone's time on saturday for a short ceremony and dinner."
+    - "for the rest of the weekend, feel free to come and go as you please and do anything else you'd like."
+    - 'dress is casual (our colors are navy and white) and if you want any specific food or drink, bring it!'
+
+- slideshow:
+    images:
+      - 'wedding_the-beach-house_01.jpg'
+      - 'wedding_the-beach-house_02.jpg'
+      - 'wedding_the-beach-house_03.jpg'
+      - 'wedding_the-beach-house_04.jpg'
+      - 'wedding_the-beach-house_05.jpg'
+      - 'wedding_the-beach-house_06.jpg'
+      - 'wedding_the-beach-house_07.jpg'
+      - 'wedding_the-beach-house_08.jpg'
+      - 'wedding_the-beach-house_09.jpg'
+      - 'wedding_the-beach-house_10.jpg'
+
+- title: 'traveling'
+  paragraphs:
+    - 'if you are traveling to florida from out of state, please fly into tampa international airport (TPA).'
+    - 'we will have people available to pick you up from the airport and bring you to the beach house.'
+    - 'we anticipate most people (out of state or not) will come sometime on friday and leave on sunday.'
+
+- title: 'the island'
+  paragraphs:
+    - "anna maria island was recently ranked the <a href='http://www.nbcnews.com/id/54441546/ns/local_news-tampa_fl/#.UwvXsfRdXRp' target='_blank'>#3 best island</a> in the U.S. in <a href='http://abcnews.go.com/Travel/tripadvisors-10-best-islands-us/story?id=22569843#8' target='_blank'>TripAdvisor's top 10.</a>"
+    - "there's a trolley that will take you around the island, plenty of shopping, restaurants and things to do."
+    - 'see more <a href="http://www.annamariaisland.com" target="_blank">here</a> and <a href="http://www.visitannamaria.com" target="_blank">here</a>. we hope you end up loving it as much as we do!'

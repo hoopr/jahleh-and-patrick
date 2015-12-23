@@ -1,0 +1,45 @@
+{% assign page_title = page.title | slugify %}
+
+<section class="content {{ page_title }}-content grid-container">
+  {% for section in site.data.pages[page_title] %}
+    <section>
+      {% assign section_title = section.title %}
+      {% assign section_paragraphs = section.paragraphs %}
+      {% assign section_iframe = section.iframe %}
+      {% assign section_slideshow = section.slideshow %}
+      {% assign section_image_links = section.image_links %}
+
+      {% if section_title %}
+        <h2>{{ section_title }}</h2>
+      {% endif %}
+
+      {% if section_paragraphs %}
+        {% for section_paragraph in section_paragraphs %}
+          <p>{{ section_paragraph }}</p>
+        {% endfor %}
+      {% endif %}
+
+      {% if section_iframe %}
+        <iframe src="{{ section_iframe.src }}" {{ section_iframe.attributes }}></iframe>
+      {% endif %}
+
+      {% if section_slideshow %}
+        <div class="slideshow flexslider">
+          <ul class="slides">
+            {% for section_slideshow_image in section_slideshow.images %}
+              <li><img src="/assets/img/{{ section_slideshow_image }}"></li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+
+      {% if section_image_links %}
+        {% for section_image_link in section_image_links %}
+          <a href="{{ section_image_link.link }}" target="_blank">
+            <img src="/assets/img/{{ section_image_link.image }}">
+          </a>
+        {% endfor %}
+      {% endif %}
+    </section>
+  {% endfor %}
+</section>

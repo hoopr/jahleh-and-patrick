@@ -2,11 +2,6 @@
    Our Story
    ========================================================================= */
 
-/* Center align text on the Our Story page */
-#ourStoryContainer {
-  text-align: center;
-}
-
 /* Display a description heading and paragraph inline block */
 .ourStory_description {
   h4,
@@ -36,7 +31,7 @@
   }
 
   /* Give flexslider a width and center with auto left/right margins */
-  .flexslider {
+  .slideshow {
     margin-left: auto;
     margin-right: auto;
     width: 308px ;

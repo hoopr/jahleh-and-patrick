@@ -1,0 +1,31 @@
+/* =========================================================================
+   Menu
+   ========================================================================= */
+
+/* Styles for a menu */
+.menu {
+  padding: 0;
+
+  /* Make active menu items background color the brand navy */
+  li.active {
+    background-color: $jp-navy;
+
+    /* Make the link inside the active menu item white */
+    a,
+    a:hover,
+    a:visited {
+      color: $white;
+    }
+  }
+
+  /* Styles for a menu link */
+  a {
+    font-family: $shadows-into-light;
+    text-align: center;
+  }
+}
+
+/* Display items in a horizontal menu inline-block */
+.horizontal-menu li {
+  display: inline-block;
+}

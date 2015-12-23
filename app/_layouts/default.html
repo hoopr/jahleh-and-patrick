@@ -3,8 +3,16 @@
   {% include base/head.html %}
 
   <body>
-    <div class="page {{ page.layout }}-page">
-      {{ content }}
+    <div class="page">
+      {% include layout/header.html %}
+
+      {% include layout/navigation.html %}
+
+      {% include layout/content.html %}
+
+      <hr />
+
+      {% include layout/footer.html %}
     </div>
 
     {% include base/scripts.html %}

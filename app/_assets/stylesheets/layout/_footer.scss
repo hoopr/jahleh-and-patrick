@@ -2,7 +2,16 @@
    Footer
    ========================================================================= */
 
-/* Decrease font size in footer paragraphs */
-#footercontainer p {
-  font-size: 0.7rem;
+/* Footer | Colophon
+   ========================================================================= */
+
+/* Center align footer text */
+.colophon {
+  padding: .5em 1em 1em;
+  text-align: center;
+
+  /* Set font size for text */
+  p {
+    font-size: 1em;
+  }
 }
