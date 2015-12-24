@@ -2,66 +2,45 @@
    Our Story
    ========================================================================= */
 
-/* Display a description heading and paragraph inline block */
-.ourStory_description {
-  h4,
-  p {
-    display: inline-block;
+/* Styles for our story content */
+.our-story-content {
+
+  /* Remove section bottom margin by default */
+  section {
+    margin-bottom: 0;
   }
-}
 
-/* Styles for the "jahleh + patrick" section */
-#ourStory_jahlpat {
+  /* Make images 100px wide */
+  img {
+    width: 100px;
 
-  /* Give description left and right borders a height of 50px */
-  .ourStory_description {
-    .left,
-    .right {
-      height: 50px;
+    /* Set auto width for images on medium and up devices */
+    @include breakpoint($mq-medium) {
+      width: auto;
     }
   }
 
-  /* Give image left and right borders a height of 100px and a black border */
-  .ourStory_image {
-    .left,
-    .right {
-      border-bottom: 2px dashed $black;
-      height: 100px;
-    }
+  /* On sections that ask for bottom margin, give them some */
+  .bottom-margin {
+    margin-bottom: 1.5em;
   }
 
-  /* Give flexslider a width and center with auto left/right margins */
+  /* Don't constain image width in sections that ask for full image */
+  .full-image img {
+    width: auto;
+  }
+
+  /* Give slideshow a width and center with auto left/right margins */
   .slideshow {
     margin-left: auto;
     margin-right: auto;
-    width: 308px ;
+    max-width: 308px;
 
     /* Remove left/right margins and make 30% wide on large and up devices */
     @include breakpoint($mq-large) {
       margin-left: 0;
       margin-right: 0;
-      width: 30%;
+      max-width: none;
     }
-  }
-}
-
-/* Make Our Story section images 100px wide */
-#ourStory_jahleh img,
-#ourStory_patrick img,
-#ourStory_athletics img,
-#ourStory_summer2012 img,
-#ourStory_fall2012 img,
-#ourStory_christmas2012 img,
-#ourStory_spring2013 img,
-#ourStory_summer2013 img,
-#ourStory_fall2013 img,
-#ourStory_graduation img,
-#ourStory_christmas2013 img,
-#ourStory_westpalmbeach img {
-  width: 100px;
-
-  /* Set auto width for images on medium and up devices */
-  @include breakpoint($mq-medium) {
-    width: auto;
   }
 }

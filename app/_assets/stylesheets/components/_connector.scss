@@ -1,0 +1,34 @@
+/* =========================================================================
+   Connector
+   ========================================================================= */
+
+/* Display connector as inline block */
+.connector {
+  display: inline-block;
+}
+
+/* Give left connector a left border */
+.connector-left {
+  border-left: 2px dashed $black;
+}
+
+/* Give right connector a right border */
+.connector-right {
+  border-right: 2px dashed $black;
+}
+
+/* Give horizontal connector a default height and bottom border */
+.horizontal-connector {
+  border-bottom: 2px dashed $black;
+  height: 100px;
+}
+
+/* Make vertical connector 30px tall */
+.vertical-connector {
+  height: 30px;
+}
+
+/* Give vertical connector larger than default height */
+.vertical-connector-lg {
+  height: 84px;
+}

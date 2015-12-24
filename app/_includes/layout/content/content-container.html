@@ -1,0 +1,17 @@
+{% assign page_title = page.title | slugify %}
+
+<section class="content {{ page_title }}-content grid-container">
+  {% for section in site.data.pages[page_title] %}
+    {% assign section_grid = section.grid %}
+
+    {% if section_grid %}
+      <div class="{{ section_grid.class }}">
+        {% for section_grid_section in section_grid.sections %}
+          {% include layout/content/content-section.html section=section_grid_section %}
+        {% endfor %}
+      </div>
+    {% else %}
+      {% include layout/content/content-section.html section=section %}
+    {% endif %}
+  {% endfor %}
+</section>

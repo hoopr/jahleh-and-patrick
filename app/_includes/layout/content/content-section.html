@@ -1,0 +1,65 @@
+{% assign section_attributes = include.section.attributes %}
+{% assign section_title = include.section.title %}
+{% assign section_paragraphs = include.section.paragraphs %}
+{% assign section_images = include.section.images %}
+{% assign section_iframe = include.section.iframe %}
+{% assign section_slideshow = include.section.slideshow %}
+{% assign section_image_links = include.section.image_links %}
+{% assign section_connector = include.section.connector %}
+{% assign section_separator = include.section.separator %}
+
+<section {{ section_attributes }}>
+  {% if section_title %}
+    <h2>{{ section_title }}</h2>
+  {% endif %}
+
+  {% if section_paragraphs %}
+    {% for section_paragraph in section_paragraphs %}
+      <p>{{ section_paragraph }}</p>
+    {% endfor %}
+  {% endif %}
+
+  {% if section_images %}
+    {% for section_image in section_images %}
+      {% assign section_images_loop_index = forloop.index %}
+
+      {% if section_images_loop_index == 4 %}
+        <br>
+      {% elsif section_images_loop_index == 6 %}
+        <br>
+      {%endif %}
+
+      <img src="/assets/img/{{ section_image }}">
+    {% endfor %}
+  {% endif %}
+
+  {% if section_iframe %}
+    <iframe src="{{ section_iframe.src }}" {{ section_iframe.attributes }}></iframe>
+  {% endif %}
+
+  {% if section_slideshow %}
+    <div class="slideshow flexslider">
+      <ul class="slides">
+        {% for section_slideshow_image in section_slideshow %}
+          <li><img src="/assets/img/{{ section_slideshow_image }}"></li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
+  {% if section_image_links %}
+    {% for section_image_link in section_image_links %}
+      <a href="{{ section_image_link.link }}" target="_blank">
+        <img src="/assets/img/{{ section_image_link.image }}">
+      </a>
+    {% endfor %}
+  {% endif %}
+
+  {% if section_connector %}
+    <span class="connector {{ section_connector }}"></span>
+  {% endif %}
+
+  {% if section_separator %}
+    <hr>
+  {% endif %}
+</section>

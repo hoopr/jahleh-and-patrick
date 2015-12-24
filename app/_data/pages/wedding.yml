@@ -22,17 +22,16 @@
     - 'dress is casual (our colors are navy and white) and if you want any specific food or drink, bring it!'
 
 - slideshow:
-    images:
-      - 'wedding_the-beach-house_01.jpg'
-      - 'wedding_the-beach-house_02.jpg'
-      - 'wedding_the-beach-house_03.jpg'
-      - 'wedding_the-beach-house_04.jpg'
-      - 'wedding_the-beach-house_05.jpg'
-      - 'wedding_the-beach-house_06.jpg'
-      - 'wedding_the-beach-house_07.jpg'
-      - 'wedding_the-beach-house_08.jpg'
-      - 'wedding_the-beach-house_09.jpg'
-      - 'wedding_the-beach-house_10.jpg'
+    - 'wedding_the-beach-house_01.jpg'
+    - 'wedding_the-beach-house_02.jpg'
+    - 'wedding_the-beach-house_03.jpg'
+    - 'wedding_the-beach-house_04.jpg'
+    - 'wedding_the-beach-house_05.jpg'
+    - 'wedding_the-beach-house_06.jpg'
+    - 'wedding_the-beach-house_07.jpg'
+    - 'wedding_the-beach-house_08.jpg'
+    - 'wedding_the-beach-house_09.jpg'
+    - 'wedding_the-beach-house_10.jpg'
 
 - title: 'traveling'
   paragraphs:

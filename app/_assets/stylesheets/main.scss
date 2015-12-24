@@ -22,6 +22,7 @@
    Components
    ========================================================================= */
 @import 'components/button';
+@import 'components/connector';
 @import 'components/flexslider';
 @import 'components/form';
 @import 'components/menu';
@@ -39,6 +40,6 @@
    ========================================================================= */
 @import 'pages/our-story';
 @import 'pages/wedding';
-@import 'pages/rsvp';
-@import 'pages/guestbook';
+// @import 'pages/rsvp';
+// @import 'pages/guestbook';
 @import 'pages/registry';
