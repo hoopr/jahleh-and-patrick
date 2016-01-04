@@ -1,85 +1,7 @@
 /* =========================================================================
-   Firebase Refs
+   Variables
    ========================================================================= */
 const firebaseRef = new Firebase('https://jahleh-and-patrick.firebaseio.com');
-const firebaseGuestbookRef = firebaseRef.child('guestbook'); // Guestbook data
-
-/* =========================================================================
-   jQuery Validation Validators
-   ========================================================================= */
-
-/* Initialize validator for the Guestbook form */
-const guestbookValidator = $('#guestbook-form').validate({
-
-  /* Don't ignore any fields to allow validation of hidden fields */
-  ignore: [],
-
-  /* Validation rules */
-  rules: {
-    'guestbook-form-name': {
-      required: true
-    },
-    'guestbook-form-note': {
-      required: true
-    },
-    'guestbook-form-g-recaptcha': {
-      /* Guestbook reCAPTCHA is required only if it has not been completed */
-      required: function guestbookFormReCAPTCHARequired() {
-        if (grecaptcha.getResponse().length) {
-          return false;
-        }
-
-        return true;
-      }
-    }
-  },
-
-  /* Custom error messages for each Guestbook form field */
-  messages: {
-    'guestbook-form-name': {
-      required: 'please tell us your name(s).'
-    },
-    'guestbook-form-note': {
-      required: 'please leave us a note.'
-    },
-    'guestbook-form-g-recaptcha': {
-      required: "please indicate you're not a robot (it seems silly, we know)."
-    }
-  },
-
-  /* Tell plugin where to display the form field error */
-  errorPlacement($error, $element) {
-
-    /* Get the element's name that has an error */
-    const fieldName = $element.attr('name');
-
-    /* Use the field name + '-error' to build the class and place the error */
-    $('.' + fieldName + '-error').append($error);
-  },
-
-  /* What to do when the Guestbook form is submitted and valid */
-  submitHandler() {
-
-    /* Get the Guestbook name and note fields */
-    const $nameField = $('#guestbook-form-name');
-    const $noteField = $('#guestbook-form-note');
-
-    /* Save the name, note, and current time of the message to Firebase */
-    firebaseGuestbookRef.push().set({
-      name: $nameField.val(),
-      note: $noteField.val(),
-      date: new Date().getTime()
-    });
-
-    /* Clear the form */
-    $nameField.val('');
-    $noteField.val('');
-    grecaptcha.reset();
-
-    /* Scroll user to the bottom of the page where their message was added */
-    $('html, body').animate({scrollTop: $(document).height() - $(window).height()}, 500, 'swing');
-  }
-});
 
 /* =========================================================================
    Functions
@@ -115,16 +37,103 @@ function addGuestbookMessage(name, note) {
  */
 function updateReCAPTCHAValidation() {
 
-  // Manually validate the reCAPTCHA again
-  guestbookValidator.element('#guestbook-form-g-recaptcha');
+  // Manually remove reCAPTCHA error when user completes it
+  $('#guestbook-form-g-recaptcha').removeClass('error').addClass('valid');
+  $('.guestbook-form-g-recaptcha-error label').hide();
 }
 
 /* =========================================================================
    Scripts
    ========================================================================= */
 
+/* Initialize FlexSlider slideshows */
+$('.slideshow').flexslider({
+  animation: 'slide',
+  directionNav: true,
+  slideshowSpeed: 3000,
+  minItems: 1,
+  animationLoop: false,
+  move: 1
+});
+
 /* Do the following only on the Guestbook page */
 if ($('.content').hasClass('guestbook-content')) {
+
+  /* Create ref to Firebase data for Guestbook page */
+  const firebaseGuestbookRef = firebaseRef.child('guestbook');
+
+  /* Initialize validator for the Guestbook form */
+  $('#guestbook-form').validate({
+
+    /* Don't ignore any fields to allow validation of hidden fields */
+    ignore: [],
+
+    /* Validation rules */
+    rules: {
+      'guestbook-form-name': {
+        required: true
+      },
+      'guestbook-form-note': {
+        required: true
+      },
+      'guestbook-form-g-recaptcha': {
+        /* Guestbook reCAPTCHA is required only if it has not been completed */
+        required: function guestbookFormReCAPTCHARequired() {
+          if (grecaptcha.getResponse().length) {
+            return false;
+          }
+
+          return true;
+        }
+      }
+    },
+
+    /* Custom error messages for each Guestbook form field */
+    messages: {
+      'guestbook-form-name': {
+        required: 'please tell us your name(s).'
+      },
+      'guestbook-form-note': {
+        required: 'please leave us a note.'
+      },
+      'guestbook-form-g-recaptcha': {
+        required: "please indicate you're not a robot (it seems silly, we know)."
+      }
+    },
+
+    /* Tell plugin where to display the form field error */
+    errorPlacement($error, $element) {
+
+      /* Get the element's name that has an error */
+      const fieldName = $element.attr('name');
+
+      /* Use the field name + '-error' to build the class and place the error */
+      $('.' + fieldName + '-error').append($error);
+    },
+
+    /* What to do when the Guestbook form is submitted and valid */
+    submitHandler() {
+
+      /* Get the Guestbook name and note fields */
+      const $nameField = $('#guestbook-form-name');
+      const $noteField = $('#guestbook-form-note');
+
+      /* Save the name, note, and current time of the message to Firebase */
+      firebaseGuestbookRef.push().set({
+        name: $nameField.val(),
+        note: $noteField.val(),
+        date: new Date().getTime()
+      });
+
+      /* Clear the form */
+      $nameField.val('');
+      $noteField.val('');
+      grecaptcha.reset();
+
+      /* Scroll user to the bottom of the page where their message was added */
+      $('html, body').animate({scrollTop: $(document).height() - $(window).height()}, 500, 'swing');
+    }
+  });
 
   /* Query Firebase Guestbook */
   firebaseGuestbookRef.orderByChild('date').on('child_added', function queryGuestbook(message) {
@@ -136,16 +145,6 @@ if ($('.content').hasClass('guestbook-content')) {
     addGuestbookMessage(messageVal.name, messageVal.note);
   });
 }
-
-/* Initialize FlexSliders */
-$('.slideshow').flexslider({
-  animation: 'slide',
-  directionNav: true,
-  slideshowSpeed: 3000,
-  minItems: 1,
-  animationLoop: false,
-  move: 1
-});
 
   // $('#rsvpCodeForm').validate({
   //   rules: {
