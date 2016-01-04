@@ -2,24 +2,35 @@
    Guestbook
    ========================================================================= */
 
-/* Styles for the Guestbook page */
-#guestbookContainer {
+/* Change alignment and spacing around form errors */
+.guestbook-form-error {
+  padding-top: .25em;
+  text-align: left;
+}
+
+/* Display Google reCAPTCHA inline-block to move to center */
+.guestbook-form-g-recaptcha div:first-of-type {
+  display: inline-block;
+}
+
+/* Center align Google reCAPTCHA error text */
+.guestbook-form-g-recaptcha-error {
   text-align: center;
 }
 
-/* Change alignment and spacing around form errors */
-#guestbookErrorname,
-#guestbookErrornote {
-  padding-top: 10px;
+/* Remove bottom margin from guestbook messages container */
+section.guestbook-messages {
+  margin-bottom: 0;
+}
+
+/* Align guestbook entry text to the left and give bottom margin */
+.guestbook-message {
+  margin-top: 1.5em;
   text-align: left;
 }
 
-/* Align guestbook entry text to the left */
-.guestbookEntry {
-  text-align: left;
-}
-
-/* Make a guestbook entry name bold */
-.guestbookEntryName {
+/* Make a guestbook entry name bold and give some bottom spacing */
+.guestbook-message-name {
   font-weight: bold;
+  margin-bottom: .375em;
 }

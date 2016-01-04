@@ -13,6 +13,8 @@
 
   // Global variables for this project that ESLint should recognize
   "globals": {
+    "Firebase": true,
+    "grecaptcha": true
   },
 
   // Specific ESLint rules to override locally
@@ -21,10 +23,13 @@
     // Enforce no trailing commas
     "comma-dangle": [2, "never"],
 
-    // Don't enforce padding within blocks (this is just stylistic preference)
-    "padded-blocks": [0, "never"],
+    // Ignore the Google reCAPTCHA callback function
+    "no-unused-vars": [2, {"vars": "all", "varsIgnorePattern": "^updateReCAPTCHAValidation$", "args": "all"}],
 
     // Allow spaces inside brackets (this is just stylistic preference)
-    "object-curly-spacing": [0, "always"]
+    "object-curly-spacing": [0, "always"],
+
+    // Don't enforce padding within blocks (this is just stylistic preference)
+    "padded-blocks": [0, "never"]
   }
 }

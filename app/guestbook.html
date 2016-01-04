@@ -2,3 +2,22 @@
 layout: 'default'
 title: 'Guestbook'
 ---
+
+<form class="grid-parent prefix-25 grid-50 suffix-25 tablet-prefix-15 tablet-grid-70 tablet-suffix-15 mobile-grid-100" id="guestbook-form" method="post">
+  <label class="grid-25 tablet-grid-20 mobile-grid-15" for="guestbook-form-name">name</label>
+  <input class="grid-75 tablet-grid-80 mobile-grid-85" id="guestbook-form-name" name="guestbook-form-name" type="text" placeholder="tell us who is leaving the note" />
+  <div class="guestbook-form-error guestbook-form-name-error prefix-25 grid-75 tablet-prefix-20 tablet-grid-80 mobile-prefix-15 mobile-grid-85"></div>
+
+  <textarea class="grid-100 tablet-grid-100 mobile-grid-100" rows="5" id="guestbook-form-note" name="guestbook-form-note" placeholder="write your note here"></textarea>
+  <div class="guestbook-form-error guestbook-form-note-error grid-100 tablet-grid-100 mobile-grid-100"></div>
+
+  <input id="guestbook-form-g-recaptcha" name="guestbook-form-g-recaptcha" type="hidden" />
+  <div class="g-recaptcha guestbook-form-g-recaptcha grid-100 tablet-grid-100 mobile-grid-100" data-sitekey="6Ld5dxQTAAAAAOGLz3CONNAacLXEM4ZUZJ-kNlmB" data-callback="updateReCAPTCHAValidation"></div>
+  <div class="guestbook-form-error guestbook-form-g-recaptcha-error grid-100 tablet-grid-100 mobile-grid-100"></div>
+
+  <input class="btn" type="submit" value="sign" />
+</form>
+
+<section class="guestbook-messages prefix-25 grid-50 suffix-25 tablet-prefix-15 tablet-grid-70 tablet-suffix-15 mobile-grid-100">
+  <br>
+</section>

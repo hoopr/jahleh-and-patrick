@@ -18,9 +18,9 @@
   .menu {
     margin: -4px 0 1.5em;
 
-    /* Add top margin on medium and up devices */
+    /* Add margin on medium and up devices */
     @include breakpoint($mq-medium) {
-      margin-top: .75em;
+      margin: 0.75em 0 3em;
     }
 
     /* Menu item styles */

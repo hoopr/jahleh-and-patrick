@@ -3,7 +3,8 @@
    ========================================================================= */
 
 /* Styles for a button */
-.submit {
+.btn,
+.btn:focus {
   background-color: $jp-seafoam;
   border: 2px groove $gray-d4;
   border-radius: 1em;
@@ -12,6 +13,12 @@
   font-family: $open-sans-condensed;
   font-size: 1.25rem;
   line-height: 1;
-  margin-top: .5em;
+  margin-top: .75em;
   padding: 5px 25px;
+  transition: opacity .3s;
+}
+
+/* Make less opaque on hover */
+.btn:hover {
+  opacity: .75;
 }
