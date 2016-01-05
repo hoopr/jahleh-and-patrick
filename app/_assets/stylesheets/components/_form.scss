@@ -57,6 +57,13 @@ textarea {
   padding-top: 10px;
 }
 
+/* Styles for a form span */
+span {
+  font-size: 1.25em;
+  margin-left: 0.25em;
+  outline-color: $jp-seafoam;
+}
+
 /* Give Google reCAPTCHA some spacing */
 .g-recaptcha {
   margin-top: .5em;

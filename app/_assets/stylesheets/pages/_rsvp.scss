@@ -2,13 +2,13 @@
    RSVP
    ========================================================================= */
 
-/* Give left padding to form labels */
-#rsvpCodeForm label {
-  padding-left: 5px;
+/* Give some bottom margin to content on RSVP page */
+.rsvp-content {
+  margin-bottom: 1.5em;
 }
 
 /* Change alignment and spacing around form errors */
-#rsvpCodeErrors {
-  padding-top: 10px;
+.rsvp-form-error {
+  padding-top: .25em;
   text-align: left;
 }

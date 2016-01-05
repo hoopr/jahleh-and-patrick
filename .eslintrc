@@ -14,7 +14,8 @@
   // Global variables for this project that ESLint should recognize
   "globals": {
     "Firebase": true,
-    "grecaptcha": true
+    "grecaptcha": true,
+    "sha512": true
   },
 
   // Specific ESLint rules to override locally

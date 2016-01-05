@@ -2,3 +2,25 @@
 layout: 'default'
 title: 'RSVP'
 ---
+
+<form class="grid-parent prefix-25 grid-50 suffix-25 tablet-prefix-15 tablet-grid-70 tablet-suffix-15 mobile-grid-100" id="rsvp-form-part-1" method="post">
+  <label class="grid-25 tablet-grid-20 mobile-grid-15" for="rsvp-form-part-1-code">code</label>
+  <input class="grid-75 tablet-grid-80 mobile-grid-85" id="rsvp-form-part-1-code" name="rsvp-form-part-1-code" type="text" placeholder="enter the code you received with your save the date" />
+  <div class="rsvp-form-error rsvp-form-part-1-code-error prefix-25 grid-75 tablet-prefix-20 tablet-grid-80 mobile-prefix-15 mobile-grid-85"></div>
+  <div class="rsvp-form-error rsvp-form-part-1-code-not-found-error prefix-25 grid-75 tablet-prefix-20 tablet-grid-80 mobile-prefix-15 mobile-grid-85">
+    <label id="rsvp-form-part-1-code-not-found-error" class="error" for="rsvp-form-part-1-code" style="display: none;"></label>
+  </div>
+
+  <input class="btn" type="submit" value="submit" />
+</form>
+
+<form class="hide grid-parent prefix-25 grid-50 suffix-25 tablet-prefix-15 tablet-grid-70 tablet-suffix-15 mobile-grid-100" id="rsvp-form-part-2" method="post">
+  <p><em>please select who will be attending: </em></p>
+
+  <input class="btn" type="submit" value="rsvp" />
+</form>
+
+<div class="rsvp-form-confirmation hide grid-100 tablet-grid-100 mobile-grid-100">
+  <p><em>thank you! your rsvp has been delivered to us (by a very fast carrier pidgeon).</em></p>
+  <p><em>if you have a minute, we'd love for you to check out our <a href="/guestbook">guestbook</a> and leave us a note!</em></p>
+</div>
