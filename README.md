@@ -30,7 +30,10 @@ The wedding website for Jahleh & Patrick Hooper.
 - Shadows Into Light Two ([https://www.google.com/fonts/specimen/Shadows+Into+Light+Two](https://www.google.com/fonts/specimen/Shadows+Into+Light+Two))
 
 #### JavaScript
+- Firebase ([https://www.firebase.com/](https://www.firebase.com/))
 - FlexSlider ([http://flexslider.woothemes.com/](http://flexslider.woothemes.com/))
+- Google reCAPTCHA ([https://www.google.com/recaptcha/intro/index.html](https://www.google.com/recaptcha/intro/index.html))
 - jQuery ([https://jquery.com](https://jquery.com))
 - jQuery Validation Plugin ([http://jqueryvalidation.org/](http://jqueryvalidation.org/))
+- js-sha512 ([https://github.com/emn178/js-sha512](https://github.com/emn178/js-sha512))
 - Modernizr ([http://modernizr.com/](http://modernizr.com/))
