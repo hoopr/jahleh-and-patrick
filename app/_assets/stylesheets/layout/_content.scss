@@ -10,8 +10,7 @@
 
   /* Remove padding on medium and up devices */
   @include breakpoint($mq-medium) {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0 0 1.5em;
   }
 
   /* Give bottom margin to sections */
