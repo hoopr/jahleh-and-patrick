@@ -195,12 +195,13 @@
 
 - connector: 'connector-left vertical-connector'
 
-- attributes: 'class="bottom-margin full-image"'
+- attributes: 'class="bottom-margin"'
   title: 'proposal'
   paragraphs:
     - "look at it. it's like...for real."
 
-- images:
+- attributes: 'class="full-image"'
+  images:
     - 'our-story_proposal_01.jpg'
 
 - attributes: 'class="bottom-margin"'
