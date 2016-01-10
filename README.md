@@ -26,7 +26,7 @@ The wedding website for Jahleh & Patrick Hooper.
 - FlexSlider ([http://flexslider.woothemes.com/](http://flexslider.woothemes.com/))
 - Normalize ([https://necolas.github.io/normalize.css/](https://necolas.github.io/normalize.css/))
 - Sassy Maps ([https://github.com/at-import/Sassy-Maps](https://github.com/at-import/Sassy-Maps))
-- Unsemantic Grid System ([http://unsemantic.com/](http://unsemantic.com/))
+- Unsemantic ([http://unsemantic.com/](http://unsemantic.com/))
 
 #### Fonts
 - FlexSlider ([http://flexslider.woothemes.com/](http://flexslider.woothemes.com/))
