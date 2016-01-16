@@ -5,6 +5,8 @@ before_install:
   - rvm install 2.3.0
 install:
   - npm install
+  - npm install -g surge
   - bundle install --path vendor/bundle
 after_success:
-  - npm run deploy
+  - npm run build
+  - surge ./public
