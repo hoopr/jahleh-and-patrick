@@ -1,9 +1,9 @@
 title: "Jahleh + Patrick"
 description: "The wedding website for Jahleh & Patrick Hooper."
 url: "http://jahlehandpatrick.hoopr.io"
-source: ../app
-destination: ../public
+source: "../app"
+destination: "../public"
 gems:
-  - jekyll-sitemap
+  - "jekyll-sitemap"
 markdown: rdiscount
 permalink: pretty

@@ -1,210 +1,210 @@
 - grid:
-    class: 'grid-45 suffix-10 tablet-grid-100 mobile-grid-100'
+    class: "grid-45 suffix-10 tablet-grid-100 mobile-grid-100"
     sections:
       - attributes: 'class="bottom-margin"'
-        title: 'jahleh'
+        title: jahleh
         paragraphs:
-          - '<strong><em>(n.)</em></strong> : a scruffy beach rat from Florida.'
+          - "<strong><em>(n.)</em></strong> : a scruffy beach rat from Florida."
 
       - images:
-          - 'our-story_jahleh_01.jpg'
-          - 'our-story_jahleh_02.jpg'
-          - 'our-story_jahleh_03.jpg'
-          - 'our-story_jahleh_04.jpg'
-          - 'our-story_jahleh_05.jpg'
-          - 'our-story_jahleh_06.jpg'
+          - "our-story_jahleh_01.jpg"
+          - "our-story_jahleh_02.jpg"
+          - "our-story_jahleh_03.jpg"
+          - "our-story_jahleh_04.jpg"
+          - "our-story_jahleh_05.jpg"
+          - "our-story_jahleh_06.jpg"
 
-- connector: 'connector-left vertical-connector hide-on-desktop'
+- connector: "connector-left vertical-connector hide-on-desktop"
 
 - grid:
-    class: 'grid-45 tablet-grid-100 mobile-grid-100'
+    class: "grid-45 tablet-grid-100 mobile-grid-100"
     sections:
       - attributes: 'class="bottom-margin"'
-        title: 'patrick'
+        title: patrick
         paragraphs:
-          - '<strong><em>(n.)</em></strong> : a scruffier midwestern heartthrob from Michigan.'
+          - "<strong><em>(n.)</em></strong> : a scruffier midwestern heartthrob from Michigan."
 
       - images:
-          - 'our-story_patrick_01.jpg'
-          - 'our-story_patrick_02.jpg'
-          - 'our-story_patrick_03.jpg'
-          - 'our-story_patrick_04.jpg'
-          - 'our-story_patrick_05.jpg'
-          - 'our-story_patrick_06.jpg'
+          - "our-story_patrick_01.jpg"
+          - "our-story_patrick_02.jpg"
+          - "our-story_patrick_03.jpg"
+          - "our-story_patrick_04.jpg"
+          - "our-story_patrick_05.jpg"
+          - "our-story_patrick_06.jpg"
 
-- connector: 'connector-left vertical-connector hide-on-desktop'
+- connector: "connector-left vertical-connector hide-on-desktop"
 
 - grid:
-    class: 'grid-100 tablet-grid-100 mobile-grid-100 grid-parent'
+    class: "grid-100 tablet-grid-100 mobile-grid-100 grid-parent"
     sections:
       - attributes: 'class="connector-left vertical-connector vertical-connector-lg prefix-25 grid-10 hide-on-tablet hide-on-mobile"'
 
       - attributes: 'class="grid-30 tablet-grid-100 mobile-grid-100 bottom-margin"'
-        title: 'jahleh + patrick'
+        title: "jahleh + patrick"
         paragraphs:
-          - '= the sharpest looking tools in the shed.'
+          - "= the sharpest looking tools in the shed."
 
       - attributes: 'class="connector-right vertical-connector vertical-connector-lg grid-10 suffix-25 hide-on-tablet hide-on-mobile"'
 
 - grid:
-    class: 'grid-100 tablet-grid-100 mobile-grid-100 grid-parent'
+    class: "grid-100 tablet-grid-100 mobile-grid-100 grid-parent"
     sections:
       - attributes: 'class="connector-left horizontal-connector prefix-25 grid-10 hide-on-tablet hide-on-mobile"'
 
       - attributes: 'class="grid-30 tablet-grid-100 mobile-grid-100"'
         slideshow:
-          - 'our-story_jahleh-and-patrick_01.jpg'
-          - 'our-story_jahleh-and-patrick_02.jpg'
-          - 'our-story_jahleh-and-patrick_03.jpg'
-          - 'our-story_jahleh-and-patrick_04.jpg'
-          - 'our-story_jahleh-and-patrick_05.jpg'
-          - 'our-story_jahleh-and-patrick_06.jpg'
-          - 'our-story_jahleh-and-patrick_07.jpg'
-          - 'our-story_jahleh-and-patrick_08.jpg'
-          - 'our-story_jahleh-and-patrick_09.jpg'
-          - 'our-story_jahleh-and-patrick_10.jpg'
+          - "our-story_jahleh-and-patrick_01.jpg"
+          - "our-story_jahleh-and-patrick_02.jpg"
+          - "our-story_jahleh-and-patrick_03.jpg"
+          - "our-story_jahleh-and-patrick_04.jpg"
+          - "our-story_jahleh-and-patrick_05.jpg"
+          - "our-story_jahleh-and-patrick_06.jpg"
+          - "our-story_jahleh-and-patrick_07.jpg"
+          - "our-story_jahleh-and-patrick_08.jpg"
+          - "our-story_jahleh-and-patrick_09.jpg"
+          - "our-story_jahleh-and-patrick_10.jpg"
 
       - attributes: 'class="connector-right horizontal-connector grid-10 suffix-25 hide-on-tablet hide-on-mobile"'
 
 - attributes: 'class="bottom-margin"'
   separator: true
 
-- title: 'how we got here...'
+- title: "how we got here..."
   paragraphs:
-    - 'a love story of epic proportions.'
+    - "a love story of epic proportions."
 
-- connector: 'connector-left vertical-connector'
+- connector: "connector-left vertical-connector"
 
 - attributes: 'class="bottom-margin"'
-  title: 'athletics'
+  title: athletics
   paragraphs:
-    - 'love at first sight? hail yes!'
+    - "love at first sight? hail yes!"
 
 - images:
-    - 'our-story_athletics_01.jpg'
-    - 'our-story_athletics_02.jpg'
-    - 'our-story_athletics_03.jpg'
+    - "our-story_athletics_01.jpg"
+    - "our-story_athletics_02.jpg"
+    - "our-story_athletics_03.jpg"
 
-- connector: 'connector-left vertical-connector'
+- connector: "connector-left vertical-connector"
 
 - attributes: 'class="bottom-margin"'
-  title: 'summer 2012'
+  title: summer 2012
   paragraphs:
     - "if i'm dreaming, don't wake(board) me up."
 
 - images:
-    - 'our-story_summer-2012_01.jpg'
-    - 'our-story_summer-2012_02.jpg'
-    - 'our-story_summer-2012_03.jpg'
+    - "our-story_summer-2012_01.jpg"
+    - "our-story_summer-2012_02.jpg"
+    - "our-story_summer-2012_03.jpg"
 
-- connector: 'connector-left vertical-connector'
+- connector: "connector-left vertical-connector"
 
 - attributes: 'class="bottom-margin"'
-  title: 'fall 2012'
+  title: fall 2012
   paragraphs:
     - "movin' on up, to the east side (...of ann arbor)."
 
 - images:
-    - 'our-story_fall-2012_01.jpg'
-    - 'our-story_fall-2012_02.jpg'
-    - 'our-story_fall-2012_03.jpg'
+    - "our-story_fall-2012_01.jpg"
+    - "our-story_fall-2012_02.jpg"
+    - "our-story_fall-2012_03.jpg"
 
-- connector: 'connector-left vertical-connector'
+- connector: "connector-left vertical-connector"
 
 - attributes: 'class="bottom-margin"'
-  title: 'christmas 2012'
+  title: christmas 2012
   paragraphs:
     - "i'm dreaming of a white (sand) christmas."
 
 - images:
-    - 'our-story_christmas-2012_01.jpg'
-    - 'our-story_christmas-2012_02.jpg'
-    - 'our-story_christmas-2012_03.jpg'
+    - "our-story_christmas-2012_01.jpg"
+    - "our-story_christmas-2012_02.jpg"
+    - "our-story_christmas-2012_03.jpg"
 
-- connector: 'connector-left vertical-connector'
+- connector: "connector-left vertical-connector"
 
 - attributes: 'class="bottom-margin"'
-  title: 'spring 2013'
+  title: spring 2013
   paragraphs:
-    - 'a wedding, some trapeze swinging, and some puppy cuddles.'
+    - "a wedding, some trapeze swinging, and some puppy cuddles."
 
 - images:
-    - 'our-story_spring-2013_01.jpg'
-    - 'our-story_spring-2013_02.jpg'
-    - 'our-story_spring-2013_03.jpg'
+    - "our-story_spring-2013_01.jpg"
+    - "our-story_spring-2013_02.jpg"
+    - "our-story_spring-2013_03.jpg"
 
-- connector: 'connector-left vertical-connector'
+- connector: "connector-left vertical-connector"
 
 - attributes: 'class="bottom-margin"'
-  title: 'summer 2013'
+  title: summer 2013
   paragraphs:
     - "summer lovin', had me a blast."
 
 - images:
-    - 'our-story_summer-2013_01.jpg'
-    - 'our-story_summer-2013_02.jpg'
-    - 'our-story_summer-2013_03.jpg'
+    - "our-story_summer-2013_01.jpg"
+    - "our-story_summer-2013_02.jpg"
+    - "our-story_summer-2013_03.jpg"
 
-- connector: 'connector-left vertical-connector'
+- connector: "connector-left vertical-connector"
 
 - attributes: 'class="bottom-margin"'
-  title: 'fall 2013'
+  title: fall 2013
   paragraphs:
-    - 'a pumpkin that would have made michelangelo proud.'
+    - "a pumpkin that would have made michelangelo proud."
 
 - images:
-    - 'our-story_fall-2013_01.jpg'
-    - 'our-story_fall-2013_02.jpg'
-    - 'our-story_fall-2013_03.jpg'
+    - "our-story_fall-2013_01.jpg"
+    - "our-story_fall-2013_02.jpg"
+    - "our-story_fall-2013_03.jpg"
 
-- connector: 'connector-left vertical-connector'
+- connector: "connector-left vertical-connector"
 
 - attributes: 'class="bottom-margin"'
-  title: 'graduation'
+  title: graduation
   paragraphs:
-    - 'now a gentleman AND a scholar.'
+    - "now a gentleman AND a scholar."
 
 - images:
-    - 'our-story_graduation_01.jpg'
-    - 'our-story_graduation_02.jpg'
-    - 'our-story_graduation_03.jpg'
+    - "our-story_graduation_01.jpg"
+    - "our-story_graduation_02.jpg"
+    - "our-story_graduation_03.jpg"
 
-- connector: 'connector-left vertical-connector'
+- connector: "connector-left vertical-connector"
 
 - attributes: 'class="bottom-margin"'
-  title: 'christmas 2013'
+  title: christmas 2013
   paragraphs:
     - "can't we just get a pre-cut tree?"
 
 - images:
-    - 'our-story_christmas-2013_01.jpg'
-    - 'our-story_christmas-2013_02.jpg'
-    - 'our-story_christmas-2013_03.jpg'
+    - "our-story_christmas-2013_01.jpg"
+    - "our-story_christmas-2013_02.jpg"
+    - "our-story_christmas-2013_03.jpg"
 
-- connector: 'connector-left vertical-connector'
+- connector: "connector-left vertical-connector"
 
 - attributes: 'class="bottom-margin"'
-  title: 'west palm beach'
+  title: west palm beach
   paragraphs:
-    - 'we point and laugh at the polar vortex.'
+    - "we point and laugh at the polar vortex."
 
 - images:
-    - 'our-story_west-palm-beach_01.jpg'
-    - 'our-story_west-palm-beach_02.jpg'
-    - 'our-story_west-palm-beach_03.jpg'
+    - "our-story_west-palm-beach_01.jpg"
+    - "our-story_west-palm-beach_02.jpg"
+    - "our-story_west-palm-beach_03.jpg"
 
-- connector: 'connector-left vertical-connector'
+- connector: "connector-left vertical-connector"
 
 - attributes: 'class="bottom-margin"'
-  title: 'proposal'
+  title: proposal
   paragraphs:
     - "look at it. it's like...for real."
 
 - attributes: 'class="full-image"'
   images:
-    - 'our-story_proposal_01.jpg'
+    - "our-story_proposal_01.jpg"
 
 - attributes: 'class="bottom-margin"'
   iframe:
-    src: 'https://drive.google.com/file/d/1X6p29L5hl6299M_PRjAPyP6MiM7eouWnwg/preview'
+    src: "https://drive.google.com/file/d/1X6p29L5hl6299M_PRjAPyP6MiM7eouWnwg/preview"
     attributes: 'width="300" height="300" frameborder="0" allowfullscreen'

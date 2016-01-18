@@ -1,12 +1,12 @@
-- title: 'gift ideas'
+- title: gift ideas
   paragraphs:
     - "we put these together because it's the accepted social convention"
     - "...but all we really want is to see everyone's smiling faces at our wedding!"
 
 - image_links:
-    - link: 'http://www.amazon.com/registry/wedding/2FKVPGT1K1296'
-      image: 'registry_gift-ideas_amazon.jpg'
+    - link: "http://www.amazon.com/registry/wedding/2FKVPGT1K1296"
+      image: "registry_gift-ideas_amazon.jpg"
 
-    - link: 'http://www.potterybarn.com/registry/3469469/registry-list.html'
-      image: 'registry_gift-ideas_pottery-barn.jpg'
+    - link: "http://www.potterybarn.com/registry/3469469/registry-list.html"
+      image: "registry_gift-ideas_pottery-barn.jpg"
 

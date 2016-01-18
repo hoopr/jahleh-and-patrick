@@ -1,13 +1,13 @@
-- title: 'our story'
+- title: our story
 
-- title: 'wedding'
-  url: 'wedding'
+- title: wedding
+  url: wedding
 
-- title: 'rsvp'
-  url: 'rsvp'
+- title: rsvp
+  url: rsvp
 
-- title: 'guestbook'
-  url: 'guestbook'
+- title: guestbook
+  url: guestbook
 
-- title: 'registry'
-  url: 'registry'
+- title: registry
+  url: registry
