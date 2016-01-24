@@ -20,17 +20,19 @@
   {% endif %}
 
   {% if section_images %}
-    {% for section_image in section_images %}
-      {% assign section_images_loop_index = forloop.index %}
-
-      {% if section_images_loop_index == 4 %}
-        <br>
-      {% elsif section_images_loop_index == 6 %}
-        <br>
-      {%endif %}
-
-      <img src="/assets/img/{{ section_image }}">
-    {% endfor %}
+    <figure>
+      {% for section_image in section_images %}
+        {% assign section_images_loop_index = forloop.index %}
+  
+        {% if section_images_loop_index == 4 %}
+          <br>
+        {% elsif section_images_loop_index == 6 %}
+          <br>
+        {%endif %}
+  
+        <img src="/assets/img/{{ section_image }}">
+      {% endfor %}
+    </figure>
   {% endif %}
 
   {% if section_iframe %}
@@ -38,19 +40,17 @@
   {% endif %}
 
   {% if section_slideshow %}
-    <div class="slideshow flexslider">
-      <ul class="slides">
-        {% for section_slideshow_image in section_slideshow %}
-          <li><img src="/assets/img/{{ section_slideshow_image }}"></li>
-        {% endfor %}
-      </ul>
-    </div>
+    <ul class="slides">
+      {% for section_slideshow_image in section_slideshow %}
+        <li><figure><img src="/assets/img/{{ section_slideshow_image }}"></figure></li>
+      {% endfor %}
+    </ul>
   {% endif %}
 
   {% if section_image_links %}
     {% for section_image_link in section_image_links %}
       <a href="{{ section_image_link.link }}" target="_blank">
-        <img src="/assets/img/{{ section_image_link.image }}">
+        <figure><img src="/assets/img/{{ section_image_link.image }}"></figure>
       </a>
     {% endfor %}
   {% endif %}
