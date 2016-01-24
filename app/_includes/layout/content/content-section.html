@@ -38,11 +38,13 @@
   {% endif %}
 
   {% if section_slideshow %}
-    <ul class="slides">
-      {% for section_slideshow_image in section_slideshow %}
-        <li><img src="/assets/img/{{ section_slideshow_image }}"></li>
-      {% endfor %}
-    </ul>
+    <div class="slideshow flexslider">
+      <ul class="slides">
+        {% for section_slideshow_image in section_slideshow %}
+          <li><img src="/assets/img/{{ section_slideshow_image }}"></li>
+        {% endfor %}
+      </ul>
+    </div>
   {% endif %}
 
   {% if section_image_links %}
