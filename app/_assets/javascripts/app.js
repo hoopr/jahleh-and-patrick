@@ -36,15 +36,15 @@ const firebaseGuestbookRef = firebaseRef.child("guestbook");
  * @returns { Promise } Successful or failed Firebase anonymous login attempt
  */
 function rsvpAnonymousLogin() {
+
+  /* Clear any past sessions */
+  firebaseRef.unauth();
+
+  /* Log a user in anonymously and if error then reject, otherwise resolve */
   return new Promise((resolve, reject) => {
-
-    /* Clear any past sessions */
-    firebaseRef.unauth();
-
-    /* Log a user in anonymously and resolve if no error; otherwise, reject */
     firebaseRef.authAnonymously((error) => {
       if (error) {
-        return reject(error);
+        reject(error);
       }
       resolve();
     }, {
@@ -84,11 +84,8 @@ function addGuestCheckbox(guestCount, guestName, guestAttending) {
  */
 function rsvpLoadGuestData(firebaseRSVPGuestKey) {
 
-  /* Get the login Promise */
-  const rsvpAuth = rsvpAnonymousLogin();
-
-  /* When Promise resolves, do stuff */
-  rsvpAuth.then(() => {
+  /* Get Promise of RSVP login and when it resolves, do stuff */
+  rsvpAnonymousLogin().then(() => {
     let guestCount = 1; // Count number of guest checkboxes
 
     /* Query Firebase RSVP guests based on the provided key */
@@ -99,8 +96,7 @@ function rsvpLoadGuestData(firebaseRSVPGuestKey) {
 
       guestCount++;
     });
-  })
-  .catch(() => {}); // If Promise rejects, catch error
+  }).catch(() => {}); // If Promise rejects, catch error
 }
 
 /* Functions | Guestbook
