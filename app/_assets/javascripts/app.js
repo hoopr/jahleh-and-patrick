@@ -85,18 +85,20 @@ function addGuestCheckbox(guestCount, guestName, guestAttending) {
 function rsvpLoadGuestData(firebaseRSVPGuestKey) {
 
   /* Get Promise of RSVP login and when it resolves, do stuff */
-  rsvpAnonymousLogin().then(() => {
-    let guestCount = 1; // Count number of guest checkboxes
+  rsvpAnonymousLogin()
+    .then(() => {
+      let guestCount = 1; // Count number of guest checkboxes
 
-    /* Query Firebase RSVP guests based on the provided key */
-    firebaseRSVPGuestsRef.child(firebaseRSVPGuestKey).orderByKey().on("child_added", (guest) => {
+      /* Query Firebase RSVP guests based on the provided key */
+      firebaseRSVPGuestsRef.child(firebaseRSVPGuestKey).orderByKey().on("child_added", (guest) => {
 
-      /* Find the submit button and add HTML for a new input before it */
-      $rsvpFormPart2.find(".btn").before(addGuestCheckbox(guestCount, guest.val().name, guest.val().attending ? "checked" : ""));
+        /* Find the submit button and add HTML for a new input before it */
+        $rsvpFormPart2.find(".btn").before(addGuestCheckbox(guestCount, guest.val().name, guest.val().attending ? "checked" : ""));
 
-      guestCount++;
-    });
-  }).catch(() => {}); // If Promise rejects, catch error
+        guestCount++;
+      });
+    })
+    .catch(() => {}); // If Promise rejects, catch error
 }
 
 /* Functions | Guestbook
