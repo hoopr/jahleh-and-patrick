@@ -14,8 +14,8 @@ const $rsvpCodeField = $("#rsvp-form-part-1-code");
 const $rsvpCodeNotFoundErr = $(".rsvp-form-part-1-code-not-found-error label");
 const $rsvpFormPart2 = $("#rsvp-form-part-2");
 const $rsvpFormConfirmation = $(".rsvp-form-confirmation");
-const firebaseRSVPCodesRef = firebaseRef.child("rsvp/codes");
-const firebaseRSVPGuestsRef = firebaseRef.child("rsvp/guests");
+const firebaseRsvpCodesRef = firebaseRef.child("rsvp/codes");
+const firebaseRsvpGuestsRef = firebaseRef.child("rsvp/guests");
 
 /* Variables | Guestbook
    ========================================================================= */
@@ -82,7 +82,7 @@ function addGuestCheckbox(guestCount, guestName, guestAttending) {
  * @param { String } firebaseRSVPGuestKey - guest's key in Firebase data
  * @returns { Void } Returns no value
  */
-function rsvpLoadGuestData(firebaseRSVPGuestKey) {
+function rsvpLoadGuestData(firebaseRsvpGuestKey) {
 
   /* Get Promise of RSVP login and when it resolves, do stuff */
   rsvpAnonymousLogin()
@@ -90,7 +90,7 @@ function rsvpLoadGuestData(firebaseRSVPGuestKey) {
       let guestCount = 1; // Count number of guest checkboxes
 
       /* Query Firebase RSVP guests based on the provided key */
-      firebaseRSVPGuestsRef.child(firebaseRSVPGuestKey).orderByKey().on("child_added", (guest) => {
+      firebaseRsvpGuestsRef.child(firebaseRsvpGuestKey).orderByKey().on("child_added", (guest) => {
 
         /* Find the submit button and add HTML for a new input before it */
         $rsvpFormPart2.find(".btn").before(addGuestCheckbox(guestCount, guest.val().name, guest.val().attending ? "checked" : ""));
@@ -109,7 +109,7 @@ function rsvpLoadGuestData(firebaseRSVPGuestKey) {
  * manually removing the reCAPTCHA error when user completes it.
  * @returns { Void } Returns no value
  */
-function updateReCAPTCHAValidation() {
+function updateReCaptchaValidation() {
   $("#guestbook-form-g-recaptcha").removeClass("error").addClass("valid");
   $(".guestbook-form-g-recaptcha-error label").hide();
 }
@@ -167,22 +167,22 @@ if ($content.hasClass("rsvp-content")) {
     submitHandler() {
 
       /* Query the Firebase RSVP codes */
-      firebaseRSVPCodesRef.once("value", (codes) => {
+      firebaseRsvpCodesRef.once("value", (codes) => {
 
         /* Get a Firebase ref to the submitted code and then its value */
-        const firebaseRSVPCodeRef = codes.child(sha512($rsvpCodeField.val()));
-        const firebaseRSVPCodeRefVal = firebaseRSVPCodeRef.val();
+        const firebaseRsvpCodeRef = codes.child(sha512($rsvpCodeField.val()));
+        const firebaseRsvpCodeRefVal = firebaseRsvpCodeRef.val();
 
         /* If hashed version of submitted code exists, run this code */
-        if (firebaseRSVPCodeRef.exists()) {
+        if (firebaseRsvpCodeRef.exists()) {
 
           /* Hide and clear RSVP form part 1, then show part 2 with data */
           $rsvpFormPart1.hide();
           $rsvpCodeField.val("");
           $rsvpCodeNotFoundErr.hide();
           $rsvpFormPart2.show();
-          rsvpLoadGuestData(firebaseRSVPCodeRefVal);
-          $rsvpFormPart2.attr("data-guest-key", firebaseRSVPCodeRefVal);
+          rsvpLoadGuestData(firebaseRsvpCodeRefVal);
+          $rsvpFormPart2.attr("data-guest-key", firebaseRsvpCodeRefVal);
 
           /* If the code does not exist, show an error */
         } else {
@@ -308,7 +308,7 @@ if ($content.hasClass("rsvp-content")) {
       /* Get checkbox for this guest and update Firebase with submitted val */
       const $rsvpFormPart2Checkbox = $($rsvpFormPart2Data[index]);
 
-      firebaseRSVPGuestsRef.child(`${$rsvpFormPart2.attr("data-guest-key")}/${index + 1}`).update({ "attending": $rsvpFormPart2Checkbox.prop("checked")});
+      firebaseRsvpGuestsRef.child(`${$rsvpFormPart2.attr("data-guest-key")}/${index + 1}`).update({ "attending": $rsvpFormPart2Checkbox.prop("checked")});
     });
 
     /* Hide part 2 of the RSVP form and show the confirmation message */
