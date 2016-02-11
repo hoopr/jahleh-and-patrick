@@ -24,6 +24,9 @@
     // Enforce no trailing commas
     "comma-dangle": [2, "never"],
 
+    // Warn, not error, about max line length (of 100) being exceeded
+    "max-len": [1, 100, 2],
+
     // Ignore the Google reCAPTCHA callback function
     "no-unused-vars": [2, {"vars": "all", "varsIgnorePattern": "^updateReCaptchaValidation$", "args": "all"}],
 
