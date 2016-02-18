@@ -29,7 +29,7 @@
         <br>
       {%endif %}
 
-      <img src="/assets/img/{{ section_image }}">
+      <img src="/img/{{ section_image }}">
     {% endfor %}
   {% endif %}
 
@@ -41,7 +41,7 @@
     <div class="slideshow flexslider">
       <ul class="slides">
         {% for section_slideshow_image in section_slideshow %}
-          <li><img src="/assets/img/{{ section_slideshow_image }}"></li>
+          <li><img src="/img/{{ section_slideshow_image }}"></li>
         {% endfor %}
       </ul>
     </div>
@@ -50,7 +50,7 @@
   {% if section_image_links %}
     {% for section_image_link in section_image_links %}
       <a href="{{ section_image_link.link }}" target="_blank">
-        <img src="/assets/img/{{ section_image_link.image }}">
+        <img src="/img/{{ section_image_link.image }}">
       </a>
     {% endfor %}
   {% endif %}
