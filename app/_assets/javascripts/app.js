@@ -93,7 +93,11 @@ function rsvpLoadGuestData(firebaseRsvpGuestKey) {
       firebaseRsvpGuestsRef.child(firebaseRsvpGuestKey).orderByKey().on("child_added", (guest) => {
 
         /* Find the submit button and add HTML for a new input before it */
-        $rsvpFormPart2.find(".btn").before(addGuestCheckbox(guestCount, guest.val().name, guest.val().attending ? "checked" : ""));
+        $rsvpFormPart2
+          .find(".btn")
+          .before(
+            addGuestCheckbox(guestCount, guest.val().name, guest.val().attending ? "checked" : "")
+          );
 
         guestCount++;
       });
@@ -186,7 +190,9 @@ if ($content.hasClass("rsvp-content")) {
 
           /* If the code does not exist, show an error */
         } else {
-          $rsvpCodeNotFoundErr.text("code not found. please double-check your save the date.").show();
+          $rsvpCodeNotFoundErr
+            .text("code not found. please double-check your save the date.")
+            .show();
         }
       });
     }
@@ -308,7 +314,9 @@ if ($content.hasClass("rsvp-content")) {
       /* Get checkbox for this guest and update Firebase with submitted val */
       const $rsvpFormPart2Checkbox = $($rsvpFormPart2Data[index]);
 
-      firebaseRsvpGuestsRef.child(`${$rsvpFormPart2.attr("data-guest-key")}/${index + 1}`).update({ "attending": $rsvpFormPart2Checkbox.prop("checked")});
+      firebaseRsvpGuestsRef
+        .child(`${$rsvpFormPart2.attr("data-guest-key")}/${index + 1}`)
+        .update({ "attending": $rsvpFormPart2Checkbox.prop("checked")});
     });
 
     /* Hide part 2 of the RSVP form and show the confirmation message */
