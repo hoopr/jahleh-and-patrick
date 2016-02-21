@@ -15,6 +15,11 @@ rules:
   force-element-nesting: 0
   force-pseudo-nesting: 0
 
+  # Increase nesting depth to 3 levels
+  nesting-depth:
+    - 1
+    - max-depth: 3
+
   # Don't enforce any specific style of commenting
   no-css-comments: 0
 
