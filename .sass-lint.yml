@@ -1,6 +1,10 @@
-# Lint files ending in .sass or .scss in the following path(s)
+# Lint files ending in .sass or .scss in the following path(s) that aren't ignored
 files:
-  include: "app/**/*.s+(a|c)ss"
+  include: "**/*.s+(a|c)ss"
+  ignore:
+    - "node_modules/**/*.*"
+    - "public/**/*.*"
+    - "vendor/**/*.*"
 
 # Format as stylish and bring in default rules
 options:

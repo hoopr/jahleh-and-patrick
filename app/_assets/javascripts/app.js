@@ -316,7 +316,7 @@ if ($content.hasClass("rsvp-content")) {
 
       firebaseRsvpGuestsRef
         .child(`${$rsvpFormPart2.attr("data-guest-key")}/${index + 1}`)
-        .update({ "attending": $rsvpFormPart2Checkbox.prop("checked")});
+        .update({attending: $rsvpFormPart2Checkbox.prop("checked")});
     });
 
     /* Hide part 2 of the RSVP form and show the confirmation message */
