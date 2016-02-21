@@ -1,0 +1,5 @@
+# Don't lint anything by default
+**
+
+# Do lint files in the following folder(s) excluded from ignore rules
+!app/
