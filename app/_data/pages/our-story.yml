@@ -7,12 +7,12 @@
           - "<strong><em>(n.)</em></strong> : a scruffy beach rat from Florida."
 
       - images:
-          - "our-story_jahleh_01.jpg"
-          - "our-story_jahleh_02.jpg"
-          - "our-story_jahleh_03.jpg"
-          - "our-story_jahleh_04.jpg"
-          - "our-story_jahleh_05.jpg"
-          - "our-story_jahleh_06.jpg"
+          - "our-story-jahleh-01.jpg"
+          - "our-story-jahleh-02.jpg"
+          - "our-story-jahleh-03.jpg"
+          - "our-story-jahleh-04.jpg"
+          - "our-story-jahleh-05.jpg"
+          - "our-story-jahleh-06.jpg"
 
 - connector: "connector-left vertical-connector hide-on-desktop"
 
@@ -25,12 +25,12 @@
           - "<strong><em>(n.)</em></strong> : a scruffier midwestern heartthrob from Michigan."
 
       - images:
-          - "our-story_patrick_01.jpg"
-          - "our-story_patrick_02.jpg"
-          - "our-story_patrick_03.jpg"
-          - "our-story_patrick_04.jpg"
-          - "our-story_patrick_05.jpg"
-          - "our-story_patrick_06.jpg"
+          - "our-story-patrick-01.jpg"
+          - "our-story-patrick-02.jpg"
+          - "our-story-patrick-03.jpg"
+          - "our-story-patrick-04.jpg"
+          - "our-story-patrick-05.jpg"
+          - "our-story-patrick-06.jpg"
 
 - connector: "connector-left vertical-connector hide-on-desktop"
 
@@ -53,16 +53,16 @@
 
       - attributes: 'class="grid-30 tablet-grid-100 mobile-grid-100"'
         slideshow:
-          - "our-story_jahleh-and-patrick_01.jpg"
-          - "our-story_jahleh-and-patrick_02.jpg"
-          - "our-story_jahleh-and-patrick_03.jpg"
-          - "our-story_jahleh-and-patrick_04.jpg"
-          - "our-story_jahleh-and-patrick_05.jpg"
-          - "our-story_jahleh-and-patrick_06.jpg"
-          - "our-story_jahleh-and-patrick_07.jpg"
-          - "our-story_jahleh-and-patrick_08.jpg"
-          - "our-story_jahleh-and-patrick_09.jpg"
-          - "our-story_jahleh-and-patrick_10.jpg"
+          - "our-story-jahleh-and-patrick-01.jpg"
+          - "our-story-jahleh-and-patrick-02.jpg"
+          - "our-story-jahleh-and-patrick-03.jpg"
+          - "our-story-jahleh-and-patrick-04.jpg"
+          - "our-story-jahleh-and-patrick-05.jpg"
+          - "our-story-jahleh-and-patrick-06.jpg"
+          - "our-story-jahleh-and-patrick-07.jpg"
+          - "our-story-jahleh-and-patrick-08.jpg"
+          - "our-story-jahleh-and-patrick-09.jpg"
+          - "our-story-jahleh-and-patrick-10.jpg"
 
       - attributes: 'class="connector-right horizontal-connector grid-10 suffix-25 hide-on-tablet hide-on-mobile"'
 
@@ -81,9 +81,9 @@
     - "love at first sight? hail yes!"
 
 - images:
-    - "our-story_athletics_01.jpg"
-    - "our-story_athletics_02.jpg"
-    - "our-story_athletics_03.jpg"
+    - "our-story-athletics-01.jpg"
+    - "our-story-athletics-02.jpg"
+    - "our-story-athletics-03.jpg"
 
 - connector: "connector-left vertical-connector"
 
@@ -93,9 +93,9 @@
     - "if i'm dreaming, don't wake(board) me up."
 
 - images:
-    - "our-story_summer-2012_01.jpg"
-    - "our-story_summer-2012_02.jpg"
-    - "our-story_summer-2012_03.jpg"
+    - "our-story-summer-2012-01.jpg"
+    - "our-story-summer-2012-02.jpg"
+    - "our-story-summer-2012-03.jpg"
 
 - connector: "connector-left vertical-connector"
 
@@ -105,9 +105,9 @@
     - "movin' on up, to the east side (...of ann arbor)."
 
 - images:
-    - "our-story_fall-2012_01.jpg"
-    - "our-story_fall-2012_02.jpg"
-    - "our-story_fall-2012_03.jpg"
+    - "our-story-fall-2012-01.jpg"
+    - "our-story-fall-2012-02.jpg"
+    - "our-story-fall-2012-03.jpg"
 
 - connector: "connector-left vertical-connector"
 
@@ -117,9 +117,9 @@
     - "i'm dreaming of a white (sand) christmas."
 
 - images:
-    - "our-story_christmas-2012_01.jpg"
-    - "our-story_christmas-2012_02.jpg"
-    - "our-story_christmas-2012_03.jpg"
+    - "our-story-christmas-2012-01.jpg"
+    - "our-story-christmas-2012-02.jpg"
+    - "our-story-christmas-2012-03.jpg"
 
 - connector: "connector-left vertical-connector"
 
@@ -129,9 +129,9 @@
     - "a wedding, some trapeze swinging, and some puppy cuddles."
 
 - images:
-    - "our-story_spring-2013_01.jpg"
-    - "our-story_spring-2013_02.jpg"
-    - "our-story_spring-2013_03.jpg"
+    - "our-story-spring-2013-01.jpg"
+    - "our-story-spring-2013-02.jpg"
+    - "our-story-spring-2013-03.jpg"
 
 - connector: "connector-left vertical-connector"
 
@@ -141,9 +141,9 @@
     - "summer lovin', had me a blast."
 
 - images:
-    - "our-story_summer-2013_01.jpg"
-    - "our-story_summer-2013_02.jpg"
-    - "our-story_summer-2013_03.jpg"
+    - "our-story-summer-2013-01.jpg"
+    - "our-story-summer-2013-02.jpg"
+    - "our-story-summer-2013-03.jpg"
 
 - connector: "connector-left vertical-connector"
 
@@ -153,9 +153,9 @@
     - "a pumpkin that would have made michelangelo proud."
 
 - images:
-    - "our-story_fall-2013_01.jpg"
-    - "our-story_fall-2013_02.jpg"
-    - "our-story_fall-2013_03.jpg"
+    - "our-story-fall-2013-01.jpg"
+    - "our-story-fall-2013-02.jpg"
+    - "our-story-fall-2013-03.jpg"
 
 - connector: "connector-left vertical-connector"
 
@@ -165,9 +165,9 @@
     - "now a gentleman AND a scholar."
 
 - images:
-    - "our-story_graduation_01.jpg"
-    - "our-story_graduation_02.jpg"
-    - "our-story_graduation_03.jpg"
+    - "our-story-graduation-01.jpg"
+    - "our-story-graduation-02.jpg"
+    - "our-story-graduation-03.jpg"
 
 - connector: "connector-left vertical-connector"
 
@@ -177,9 +177,9 @@
     - "can't we just get a pre-cut tree?"
 
 - images:
-    - "our-story_christmas-2013_01.jpg"
-    - "our-story_christmas-2013_02.jpg"
-    - "our-story_christmas-2013_03.jpg"
+    - "our-story-christmas-2013-01.jpg"
+    - "our-story-christmas-2013-02.jpg"
+    - "our-story-christmas-2013-03.jpg"
 
 - connector: "connector-left vertical-connector"
 
@@ -189,9 +189,9 @@
     - "we point and laugh at the polar vortex."
 
 - images:
-    - "our-story_west-palm-beach_01.jpg"
-    - "our-story_west-palm-beach_02.jpg"
-    - "our-story_west-palm-beach_03.jpg"
+    - "our-story-west-palm-beach-01.jpg"
+    - "our-story-west-palm-beach-02.jpg"
+    - "our-story-west-palm-beach-03.jpg"
 
 - connector: "connector-left vertical-connector"
 
@@ -202,7 +202,7 @@
 
 - attributes: 'class="full-image"'
   images:
-    - "our-story_proposal_01.jpg"
+    - "our-story-proposal-01.jpg"
 
 - attributes: 'class="bottom-margin"'
   iframe:
