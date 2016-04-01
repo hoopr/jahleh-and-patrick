@@ -8,17 +8,17 @@
   background-color: $jp-seafoam;
   border: 2px groove $gray-d4;
   border-radius: 1em;
-  box-shadow: rgba($black, .75) 0 2px 6px;
+  box-shadow: rgba($black, 0.75) 0 2px 6px;
   color: $white;
   font-family: $open-sans-condensed;
   font-size: 1.25rem;
   line-height: 1;
-  margin-top: .75em;
+  margin-top: 0.75em;
   padding: 5px 25px;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
 }
 
 /* Make less opaque on hover */
 .btn:hover {
-  opacity: .75;
+  opacity: 0.75;
 }
