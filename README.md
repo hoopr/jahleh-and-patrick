@@ -1,5 +1,5 @@
 # Jahleh + Patrick
-The wedding website for Jahleh & Patrick Hooper.
+Jahleh & Patrick Hooper's wedding website.
 
 ## Usage
 1. Clone the repository.
