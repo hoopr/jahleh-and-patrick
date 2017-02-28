@@ -16,10 +16,6 @@ The wedding website for Jahleh & Patrick Hooper.
 
 ## Libraries
 
-#### Analytics
-- [Google Analytics](https://www.google.com/analytics/)
-- [Google Tag Manager](https://www.google.com/analytics/tag-manager/)
-
 #### CSS + Sass
 - [Breakpoint](http://breakpoint-sass.com/)
 - [FlexSlider](http://flexslider.woothemes.com/)
