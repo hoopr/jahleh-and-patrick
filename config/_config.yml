@@ -1,6 +1,6 @@
 title: "Jahleh + Patrick"
 description: "The wedding website for Jahleh & Patrick Hooper."
-url: "http://jahlehandpatrick.hoopr.io"
+url: "https://jahlehandpatrick.netlify.com"
 source: "../app"
 destination: "../public"
 gems:

@@ -1,18 +1,18 @@
 {
   "name": "jahleh-and-patrick",
   "version": "1.0.0",
-  "description": "Jahleh & Patrick Hooper's wedding website.",
-  "homepage": "http://jahlehandpatrick.hoopr.io",
+  "description": "The wedding website for Jahleh & Patrick Hooper.",
+  "homepage": "https://jahlehandpatrick.netlify.com",
   "author": {
     "name": "Patrick Hooper",
     "email": "patrick.d.hooper@gmail.com",
-    "url": "http://patrick.hoopr.io"
+    "url": "https://patrickhooper.me"
   },
   "contributors": [
     {
       "name": "Marie Hooper",
       "email": "marie.ashtari@gmail.com",
-      "url": "http://marie.hoopr.io"
+      "url": "https://mariehooper.me"
     }
   ],
   "scripts": {
@@ -21,11 +21,12 @@
     "lint:javascripts": "eslint .",
     "lint": "npm run lint:stylesheets && npm run lint:javascripts",
     "test": "npm run lint && gulp build",
-    "build": "NODE_ENV=production gulp build"
+    "build": "NODE_ENV=production gulp build",
+    "deploy": "npm run lint && npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pdhoopr/jahleh-and-patrick"
+    "url": "https://github.com/hoopr/jahleh-and-patrick"
   },
   "devDependencies": {
     "babel-eslint": "4.1.8",
